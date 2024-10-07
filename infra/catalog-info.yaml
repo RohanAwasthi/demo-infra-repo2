@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "demo-app2"
+  description: "demo"
+  labels:
+    system: web-apps
+  links:
+    - url: https://github.com/RohanAwasthi/demo-infra-repo2
+      title: "demo-app2"
+      icon: code
+  tags:
+    - java
+    - azure
+    - applicationtype-webapplication
+  annotations:
+    jenkins.io/github-folder: 'apache-azure-app/demo-app2'
+    jenkins.io/job-full-name: 'apache-azure-app/demo-app2'
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug:  RohanAwasthi/demo-infra-repo2
+    backstage.io/linguist: https://github.com/RohanAwasthi/demo-infra-repo2
+    azure.com/tag-selector: 'pid/demo-app2'
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/adminstrator
